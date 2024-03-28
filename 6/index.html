@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .product {
+        width: 1200px;
+        margin: 0 auto;
+        background-color: #ddc6c6;
+      }
+      .product__title {
+        text-align: center;
+      }
+      .product__subtitle {
+        text-align: center;
+      }
+      .product_catalog {
+        display: grid;
+        grid-template-columns: repeat(3, 254px);
+        grid-template-rows: 470px 470px;
+        gap: 50px;
+        justify-content: center;
+      }
+      .item__box {
+        background-color: #e7cc92;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product">
+      <h1 class="product__title">Futured Items</h1>
+      <h2 class="product__subtitle">
+        Shop for itemsbased on what we featured in this week
+      </h2>
+      <div class="product_catalog"></div>
+    </div>
+    <template id="catalog_item">
+      <a class="item__box" href="https://www.google.com/">
+        <img class="item__img" src="" alt="" />
+        <h2 class="item__name"></h2>
+        <p class="item__description"></p>
+        <p class="item__price"></p>
+      </a>
+    </template>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
