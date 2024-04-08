@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
       .product {
         width: 1200px;
         margin: 0 auto;
@@ -19,13 +23,24 @@
       .product_catalog {
         display: grid;
         grid-template-columns: repeat(3, 254px);
-        grid-template-rows: 470px 470px 470px;
+        grid-template-rows: repeat(2, 1fr);
         gap: 50px;
         justify-content: center;
       }
       .item__box {
         background-color: #e7cc92;
         border: 2px solid black;
+      }
+      .action-box {
+        background-color: #000;
+        height: 150px;
+      }
+      .cartItems {
+        /* padding-top: 30px; */
+      }
+      .footer {
+        background-color: #000;
+        height: 150px;
       }
     </style>
   </head>
@@ -37,13 +52,20 @@
       </h2>
       <div class="product_catalog"></div>
     </div>
+    <div class="action-box">
+      <p>Тут акции магазина</p>
+    </div>
+    <div class="cartItems product"></div>
+    <div class="footer"></div>
+
     <template id="catalog_item">
-      <a class="item__box" href="https://www.google.com/">
+      <div class="item__box">
         <img class="item__img" src="" alt="" />
         <h2 class="item__name"></h2>
         <p class="item__description"></p>
         <p class="item__price"></p>
-      </a>
+        <button class="button">Add to Cart</button>
+      </div>
     </template>
 
     <script src="js/data.js"></script>

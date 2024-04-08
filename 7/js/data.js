@@ -53,24 +53,6 @@ const dataJSONObject = `
         "name" : "Шестое изображение",
         "description" : "Описание шестого изображения",
         "price" : "$152.00"
-    },
-    {
-        "id" : "5",
-        "src" : "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_6561d83088410d6f4a17dfff_6561ee656e6f8b6285a47d48/scale_1200",
-        "width" : "250",
-        "height" : "300",
-        "name" : "Пятое изображение",
-        "description" : "Описание пятого изображения",
-        "price" : "$62.00"
-    },
-    {
-        "id" : "6",
-        "src" : "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_6561d83088410d6f4a17dfff_6561ee656e6f8b6285a47d48/scale_1200",
-        "width" : "250",
-        "height" : "300",
-        "name" : "Шестое изображение",
-        "description" : "Описание шестого изображения",
-        "price" : "$152.00"
     }
 ]
 `;
